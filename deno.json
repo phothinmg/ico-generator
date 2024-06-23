@@ -1,0 +1,18 @@
+{
+  "name": "@ptm/ico-generator",
+  "version": "0.1.1",
+  "exports": "./mod.ts",
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "jsr:@hono/hono@^4.4.7/jsx"
+  },
+  "imports": {
+    "hono": "jsr:@hono/hono@^4.4.7",
+    "image_magick": "npm:@imagemagick/magick-wasm@0.0.29",
+    "path": "jsr:@std/path@^0.225.2",
+    "axios": "npm:axios@1.7.2"
+  },
+  "tasks": {
+    "dev": "deno serve -A mod.ts"
+  }
+}
