@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { icoGen } from "./image-magick/mod.ts";
+import { icoGen } from "./ico-gen/mod.ts";
 
 // const imgArray = [
 //   "image/png",

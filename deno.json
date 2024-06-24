@@ -10,9 +10,10 @@
     "hono": "jsr:@hono/hono@^4.4.7",
     "image_magick": "npm:@imagemagick/magick-wasm@0.0.29",
     "path": "jsr:@std/path@^0.225.2",
-    "axios": "npm:axios@1.7.2"
+    "axios": "npm:axios@1.7.2",
+    "glob": "npm:glob@10.4.2"
   },
   "tasks": {
-    "dev": "deno serve -A mod.ts"
+    "start": "deno serve -A mod.ts"
   }
 }
