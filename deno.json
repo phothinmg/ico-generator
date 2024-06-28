@@ -11,7 +11,8 @@
     "image_magick": "npm:@imagemagick/magick-wasm@0.0.29",
     "path": "jsr:@std/path@^0.225.2",
     "axios": "npm:axios@1.7.2",
-    "glob": "npm:glob@10.4.2"
+    "glob": "npm:glob@10.4.2",
+    "array-json":"npm:array-json@2.1.1"
   },
   "tasks": {
     "start": "deno serve -A mod.ts"
