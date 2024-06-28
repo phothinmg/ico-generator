@@ -23,7 +23,7 @@ const ImageUpload: FC = () => {
           info.innerText = "genetrating......"
           const data = new FormData();
           data.append("file", input.files[0]);
-          const res = await fetch("http://localhost:8000/upload", {
+          const res = await fetch("https://icogenerator.deno.dev//upload", {
             method: "POST",
             body: data,
           });
