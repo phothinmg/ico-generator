@@ -1,8 +1,8 @@
 :root {
-  --bg: #1c1c1c;
-  --txt: #f2f2f2;
-  --btn: #673ab8;
-  --btn2: gold;
+  --bg: #f2f2f2;
+  --txt: #1c1c1c;
+  --btn: #084cdf;
+  --btn2: #580faa;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -17,14 +17,14 @@
     --bg: #f2f2f2;
     --txt: #1c1c1c;
     --btn: #084cdf;
-    --btn2: #0d45a5;
+    --btn2: #580faa;
   }
 }
 html[data-theme="light"] {
   --bg: #f2f2f2;
   --txt: #1c1c1c;
   --btn: #084cdf;
-  --btn2: #0d45a5;
+  --btn2:#580faa;
 }
 html[data-theme="dark"] {
   color-scheme: "dark";
@@ -59,7 +59,7 @@ input[type="file"]::file-selector-button {
   background: var(--btn);
   padding: 10px 20px;
   border-radius: 10px;
-  color: var(--txt);
+  color: var(--bg);
   cursor: pointer;
   transition: background 0.2s ease-in-out;
 }
@@ -75,7 +75,7 @@ input[type="file"]::file-selector-button:hover {
   background: var(--btn);
   padding: 10px 20px;
   border-radius: 10px;
-  color: var(--txt);
+  color: var(--bg);
   cursor: pointer;
   transition: background 0.2s ease-in-out;
 }
@@ -86,8 +86,13 @@ input[type="file"]::file-selector-button:hover {
 }
 
 .hero {
-  border-radius: 7px;
+  background-color: rgba(14, 93, 86, 0);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(14, 93, 86, 0);
 }
+
 .lod {
   font-size: small;
 }
